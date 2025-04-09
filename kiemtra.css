@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a:link{
+ 
+    color: black;
+    text-decoration: none;
+    
+}
+.search{
+    display: flex;
+    padding: 5px;
+
+}
+i{
+    
+    font-weight: bold;
+    padding: 5px;
+}
+.timkiem{
+   height: fit-content;
+   float: right;
+    
+}
+
+.containerheader{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    grid-template-columns: 
+    "link" "anh" "timkiem"
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 3fr 1fr 2fr;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    
+    
+   
+    
+}
+img{
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.link{
+    font-family: sans-serif;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    
+}
+#anh1{
+    width: 97%;
+    height: auto;
+    border-radius: 2cm 0cm 2cm 0cm ;
+    padding:15px ;
+}
+.new{
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+}
+.containerpic{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+.anh{
+    display: grid;
+    text-align: center;
+    gap: 23px;
+    
+
+}
+.anh2{
+    width: 100%;
+    height: 370px;
+}
+.doanvan{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    
+    
+
+}
+.maudo{
+    color: red;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.sale{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+#check{
+    width: none;
+    height: none;
+}
+.menu-icon{
+    display: none;
+}
+@media (max-width: 600px) {
+    .menu-icon {
+        display: flex;
+    }
+    .link {
+        display: none;
+    }
+    .containerheader {
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        gap: 15px;
+        width: 100%;
+        height: 40px;
+        font-weight: bold;
+        align-self: center;
+    }
+    .containerpic {
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .anh2 {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu-icon {
+        display: flex;
+    }
+    .link {
+        display: none;
+    }
+    .containerpic {
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .anh2 {
+        width: 100%;
+        height: 500px;
+    }
+}
